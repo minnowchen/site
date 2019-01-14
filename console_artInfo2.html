@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>後台管理 - 花蓮縣文化局電子索票(報名)系統</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/pure-min.css" type="text/css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script><!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+<!--     <script src="js/device.min.js"></script> -->
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css" type="text/css" />
+	<script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="DataTables-1.10.11/media/css/jquery.dataTables.css" type="text/css" />
+	<script type="text/javascript" src="DataTables-1.10.11/media/js/jquery.dataTables.min.js"></script>
+	
+	<script type="text/javascript">
+	$.extend(true, $.fn.dataTable.defaults, {
+		"language": {
+			"zeroRecords" : "無符合查詢之資料", /*關鍵字查詢為0筆資料*/
+			"info": "第 _PAGE_ 頁/ 共 _PAGES_ 頁，_TOTAL_筆資料",
+			"infoEmpty": "",
+			"lengthMenu": "每頁顯示 _MENU_ 筆資料",
+			"paginate" : {
+				"next" : "下一頁",
+				"previous" : "上一頁"
+			},
+			"search" : "搜尋關鍵字：",
+			"emptyTable" : "無符合查詢之資料"  /*沒有list*/
+		}
+	});	
+	</script>
+	<script type="text/javascript" src="js/console.js"></script>
+	
+	<style type="text/css">
+		.nav{text-align: right;}
+		.check{height:20px;width:20px;}
+		table td:last-child {min-width: 45px;}
+		.thstyle{font-weight:bold;width:12%;}
+	</style>
+  </head>
+  <body>
+    <div class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+      -->
+      <header >
+        <div class="container">
+          <div class="brand">
+<!--             <h1 class="main-logo"><a href="index.html" >花蓮縣文化局</a></h1> -->
+            <a href="index.html"><img alt="" src="images/icons/logo-desktop.png"></a>
+            <p class="brand_slogan">電子索票(報名)系統 - 後台管理</p>
+		  </div>
+        </div>
+        <div id="stuck_container" class="stuck_container" style="border-bottom:0.5px solid gray;">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                  <li><a href="console_index.html">活動資訊管理</a></li>
+                  <li><a href="console_dataList.html">報名資訊管理</a></li>
+                  <li><a href="#">分類管理</a></li>
+                  <li><a href="#">定期報表</a></li>
+                  <li><a href="#">彈性報表</a></li>
+                  <li><a href="#">通知管理</a></li>
+                  <li><a href="#">抽獎活動</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+      	<section style="position: relative;">
+	      	<div class="container" style="min-height: 540px;">
+				
+				<div>
+					<div style="display: inline-block;float: left;padding-left: 10px;padding-bottom: 15px;">
+						後台管理>活動資訊管理
+					</div>	      	
+				</div>
+
+	      		<div style="background:#fff;padding:10px" >
+	      			<table class="pure-form" >
+	      				<tr>
+	      					<td class="thstyle">公告日期</td>
+	      					<td>2018-05-12</td>
+	      					<td class="thstyle">活動名稱</td>
+	      					<td>國家公園兒童故事劇場《國家公園的快樂心》</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動日期</td>
+	      					<td colspan="3">2018-06-26  19:30 ~ 21:30</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動地點</td>
+	      					<td>本局演藝廳</td>
+	      					<td class="thstyle">活動地址</td>
+	      					<td><a href="https://www.google.com.tw/maps/place/970 花蓮縣花蓮市" class="btn-location-link" title="970 花蓮縣花蓮市" target="_blank">
+                        		970 花蓮縣花蓮市</a></td></tr>
+                        <tr>
+	      					<td class="thstyle">報名開始時間</td>
+	      					<td colspan="3">2018-05-18 ~ 2018-06-18</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動內容說明</td>
+	      					<td colspan="3">
+								 國家公園兒童故事劇場《國家公園的快樂心》<br />
+								107 年6 月26 日19時30分<br />
+								索票入場<br />
+								<br />
+								台中科技大學今年承辦內政部營建署107 年「國家公園教育扎根計畫專業服務<br />
+								案」期能藉由本計畫，將兒童劇之作法與意涵融入國家公園環境教育<br />
+								與解說宣導業務推展，促進環境教育及解說教育活動設計之創新。<br />
+								<br />
+								演出結合由營建署發行的八本國家公園兒童繪本「皮皮的冬季旅行」、<br />
+								「風獅爺與好朋友」、「小油坑探險記」、「琪琪登玉山」、「墾丁奇幻<br />
+								漂流記」、「鮭寶魚兒的願望」、「奇萊山上找水鹿」、「阿清與小蘭的<br />
+								海角樂園」這八本故事繪本出發，將其主要角色(演員扮演)〝黑面<br />
+								琵鷺〞、〝栗喉蜂虎〞、〝水鹿〞、〝寄居蟹〞、〝櫻花鉤吻鮭〞、〝綠蠵龜〞、<br />
+								〝小青斑蝶〞、〝玉山薊〞&hellip;&hellip;(國家公園志工角色/青蛇、臺北樹蛙、<br />
+								風獅爺、歐亞水獺)重新編創故事劇劇本。熱愛國家公園的〝黑熊<br />
+								爺爺〞，有一天接到了一封神秘的求救信件，原來是一群棲息在國<br />
+								家公園中的動物朋友寫給他的，因為在每一座國家公園中都出現了<br />
+								神秘的足跡與符號，而這些都讓棲息的環境給破壞了；〝黑熊爺爺〞<br />
+								於是集合了所有繪本故事中的角色，一同動身前往各個國家公園去<br />
+								查看，展開了一連串探險的旅程，而那些神秘的足跡與符號原來就<br />
+								是？〝黑熊爺爺〞與所有角色一起努力解決了所有環境的問題，也<br />
+								更深入的了解國家公園的故事&hellip;&hellip;。<br />
+								<br />
+								另繪本索取自6月15日起網路報名前100名者，現場即獲得限量繪本。網路報名網址：<a href="https://ilab.nutc.edu.tw/">https://ilab.nutc.edu.tw/</a><br />
+	
+								索票洽各票站(活動前10天開放索票)：<br>
+								(1)花蓮縣文化局圖書館(花蓮縣文復路6號 tel:8227121)<br>
+								(2)聲子藝棧(花蓮市博愛街199號 tel:8324517)<br>
+								(3)文暉文具行 (花蓮市中正路193號 tel:8332065)<br>
+								(4)功學社 (花蓮市中山路475-3號 tel:8353090)<br>
+								(5)育樂社 (花蓮市博愛街80號 tel:8322564)<br>
+								(6)政大書城 (花蓮市中山路547號3F tel:8316019)<br>
+								(7)美育音樂教室 (花蓮市明心街1-23號2樓 tel:8310500)<br>
+								(8)吉安戶政事務所(花蓮縣吉安鄉吉安路二段124巷６號)<br>
+								(9)新城戶政事務所(花蓮縣新城鄉北埔村北埔路267號)<br>
+								
+								</td>
+	      				</tr>
+	      			</table>
+      			</div>
+	      		
+	      		<div style="background:#fff;padding:10px" >	
+					<table class="stripe row-border hover" id="artInfo" >
+						<thead>
+							<tr>
+								<th nowrap="nowrap">選擇</th>
+								<th>活動日期</th>
+								<th>活動名稱</th>
+								<th>姓名</th>
+								<th>國籍</th>
+								<th>性別</th>
+								<th>年齡</th>
+								<th>新增時間</th>
+								<th>異動時間</th>
+								<th>帳號</th>
+								<th>來源</th>
+								<th align="center" width="1%" ></th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="11">
+									<label for="11"></label></td>
+								<td>2018-06-26</td>
+								<td>國家公園兒童故事劇場《國家公園的快樂心》</td>
+								<td>王美心</td>
+								<td>台灣</td>
+								<td>女</td>
+								<td>30</td>
+								<td>2018-06-01 16:02</td>
+								<td>2018-06-01 20:13</td>
+								<td>Mei</td>
+								<td align="center"><img src="images/icons/login.png"></td>								
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="12">
+									<label for="12"></label></td>
+								<td>2018-06-26</td>
+								<td>國家公園兒童故事劇場《國家公園的快樂心》</td>
+								<td>李佩琪</td>
+								<td>台灣</td>
+								<td>女</td>
+								<td>28</td>
+								<td>2018-05-28 20:00</td>
+								<td>2018-05-29 21:25</td>
+								<td>chi</td>
+								<td align="center"><img src="images/icons/facebookicon.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox" class="check" id="13">
+									<label for="13"></label></td>
+								<td>2018-06-26</td>
+								<td>國家公園兒童故事劇場《國家公園的快樂心》</td>
+								<td>陳宥安</td>
+								<td>美國</td>
+								<td>女</td>
+								<td>35</td>
+								<td>2018-06-02 09:35</td>
+								<td>2018-06-05 21:33</td>
+								<td>YuAn</td>
+								<td align="center"><img src="images/icons/social_google_box.png"></td>								
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="14">
+									<label for="14"></label></td>
+								<td>2018-06-26</td>
+								<td>國家公園兒童故事劇場《國家公園的快樂心》</td>
+								<td>許安生</td>
+								<td>台灣</td>
+								<td>男</td>
+								<td>35</td>
+								<td>2018-06-03 23:35</td>
+								<td>2018-06-04 10:00</td>
+								<td>AnShu</td>
+								<td align="center"><img src="images/icons/facebookicon.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="15">
+									<label for="15"></label></td>
+								<td>2018-06-26</td>
+								<td>國家公園兒童故事劇場《國家公園的快樂心》</td>
+								<td>山崎美英</td>
+								<td>日本</td>
+								<td>女</td>
+								<td>25</td>
+								<td>2018-06-18 20:33</td> 
+								<td>2018-06-18 20:50</td> 
+								<td>Amy</td> 
+								<td align="center"><img src="images/icons/social_google_box.png"></td>								
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>	
+						</tbody>											
+					</table>
+	      		</div>
+	      		
+	      		
+	      	</div>
+      	</section>
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section>
+          <div class="container2">
+            <div class="copyright">
+            	<img src="images/icons/logo-footer.png" width="64" align="middle" style="margin-right: 30px;" /> 本網站僅供投標演示參考用，圖文資料來源為花蓮縣文化局。
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

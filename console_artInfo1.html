@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>後台管理 - 花蓮縣文化局電子索票(報名)系統</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/pure-min.css" type="text/css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script><!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+<!--     <script src="js/device.min.js"></script> -->
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css" type="text/css" />
+	<script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="DataTables-1.10.11/media/css/jquery.dataTables.css" type="text/css" />
+	<script type="text/javascript" src="DataTables-1.10.11/media/js/jquery.dataTables.min.js"></script>
+	
+	<script type="text/javascript">
+	$.extend(true, $.fn.dataTable.defaults, {
+		"language": {
+			"zeroRecords" : "無符合查詢之資料", /*關鍵字查詢為0筆資料*/
+			"info": "第 _PAGE_ 頁/ 共 _PAGES_ 頁，_TOTAL_筆資料",
+			"infoEmpty": "",
+			"lengthMenu": "每頁顯示 _MENU_ 筆資料",
+			"paginate" : {
+				"next" : "下一頁",
+				"previous" : "上一頁"
+			},
+			"search" : "搜尋關鍵字：",
+			"emptyTable" : "無符合查詢之資料"  /*沒有list*/
+		}
+	});	
+	</script>
+	<script type="text/javascript" src="js/console.js"></script>
+	
+	<style type="text/css">
+		.nav{text-align: right;}
+		.check{height:20px;width:20px;}
+		table td:last-child {min-width: 45px;}
+		.thstyle{font-weight:bold;width:12%;}
+	</style>
+  </head>
+  <body>
+    <div class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+      -->
+      <header >
+        <div class="container">
+          <div class="brand">
+<!--             <h1 class="main-logo"><a href="index.html" >花蓮縣文化局</a></h1> -->
+            <a href="index.html"><img alt="" src="images/icons/logo-desktop.png"></a>
+            <p class="brand_slogan">電子索票(報名)系統 - 後台管理</p>
+		  </div>
+        </div>
+        <div id="stuck_container" class="stuck_container" style="border-bottom:0.5px solid gray;">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                  <li><a href="console_index.html">活動資訊管理</a></li>
+                  <li><a href="console_dataList.html">報名資訊管理</a></li>
+                  <li><a href="#">分類管理</a></li>
+                  <li><a href="#">定期報表</a></li>
+                  <li><a href="#">彈性報表</a></li>
+                  <li><a href="#">通知管理</a></li>
+                  <li><a href="#">抽獎活動</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+      	<section style="position: relative;">
+	      	<div class="container" style="min-height: 540px;">
+				
+				<div>
+					<div style="display: inline-block;float: left;padding-left: 10px;padding-bottom: 15px;">
+						後台管理>活動資訊管理
+					</div>	      	
+				</div>
+
+	      		<div style="background:#fff;padding:10px" >
+	      			<table class="pure-form" >
+	      				<tr>
+	      					<td class="thstyle">公告日期</td>
+	      					<td>2018-05-17</td>
+	      					<td class="thstyle">活動名稱</td>
+	      					<td>「愛。飛翔－聯合感恩音樂會」</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動日期</td>
+	      					<td colspan="3">2018-06-30  14:00 ~ 17:00</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動地點</td>
+	      					<td>本局演藝廳</td>
+	      					<td class="thstyle">活動地址</td>
+	      					<td><a href="https://www.google.com.tw/maps/place/970 花蓮縣花蓮市" class="btn-location-link" title="970 花蓮縣花蓮市" target="_blank">
+                        		970 花蓮縣花蓮市</a></td></tr>
+                        <tr>
+	      					<td class="thstyle">報名開始時間</td>
+	      					<td colspan="3">2018-05-22 ~ 2018-06-22</td></tr>
+	      				<tr>
+	      					<td class="thstyle">活動內容說明</td>
+	      					<td colspan="3">
+                				演出時間：<span style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">107年6月30日ㄤ下午2時</span><br />
+								演出地點：本局演藝廳<br />
+								索票地點：本局圖書館、政大書城、聲子藝棧、育樂社、文暉文具行、功學社、美育音樂教室、教育處終身教育科及宜昌國小<br />
+								電子索票：https://www.accupass.com/event/1805240757041698319931<br />
+								<br />
+								<br />
+								一、活動內容：<br />
+								「愛。飛翔－聯合感恩音樂會」是一場充滿「夢想」與「愛」的音樂饗宴。自2016年起從張中立＆劉亮延公益演出捐贈排笛開始到至今籌劃音樂會，每一個過程不僅是奇蹟，更開啟花蓮孩子們的音樂之夢。本次音樂會串聯「排笛與在地樂曲」、「24所學校400把排笛」，專業音樂人與學生共同普出純真、素樸之音樂。<br />
+								二、演出人員及單位：<br />
+								（一）排笛演奏家：張中立<br />
+								（二）吉他演奏：U然自得音樂社<br />
+								（三）鋼琴演奏：行銷科技股份有限公司文化事業部<br />
+								（四）排笛表演單位：張中立排笛合奏團：張世珍、林殷如、鄭博元、謝展文<br />
+								（五）排笛表演單位：樂合國小、三棧國小、松浦國小、舞鶴國小、瑞穗國小、橋國小、富源國小、東竹國小、明禮&nbsp;<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 國小、嘉里國小、香國小、壽豐國小、銅蘭國小、鳳仁國小、馬遠國小、瑞北國小、大禹國小、永豐國小、古<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 風國小、富源國中、光復國中、瑞穗國中、玉東國中、玉里國中排笛團。<br />
+								(六)直笛表演單位：宜昌國小直笛隊<br />
+								&nbsp;
+
+	      					</td>
+	      				</tr>
+	      			</table>
+      			</div>
+	      		
+	      		<div style="background:#fff;padding:10px" >	
+					<table class="stripe row-border hover" id="artInfo" >
+						<thead>
+							<tr>
+								<th nowrap="nowrap">選擇</th>
+								<th>活動日期</th>
+								<th>活動名稱</th>
+								<th>姓名</th>
+								<th>國籍</th>
+								<th>性別</th>
+								<th>年齡</th>
+								<th>新增時間</th>
+								<th>異動時間</th>
+								<th>帳號</th>
+								<th>來源</th>
+								<th align="center" width="1%" ></th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox" class="check" id="01">
+									<label for="01"></label></td>
+								<td>2018-06-30</td>
+								<td>愛。飛翔－聯合感恩音樂會</td>
+								<td>王里仁</td>
+								<td>台灣</td>
+								<td>男</td>
+								<td>32</td>
+								<td>2018-06-15 09:00</td>
+								<td>2018-06-18 10:00</td>
+								<td>andy</td>
+								<td align="center"><img src="images/icons/facebookicon.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox" class="check" id="02">
+									<label for="02"></label></td>
+								<td>2018-06-30</td>
+								<td>愛。飛翔－聯合感恩音樂會</td>
+								<td>李又清</td>
+								<td>台灣</td>
+								<td>女</td>
+								<td>35</td>
+								<td>2018-06-16 12:20</td>
+								<td>2018-06-20 21:00</td>
+								<td>chin</td>
+								<td align="center"><img src="images/icons/facebookicon.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="03">
+									<label for="03"></label></td>
+								<td>2018-06-30</td>
+								<td>愛。飛翔－聯合感恩音樂會</td>
+								<td>李白</td>
+								<td>唐朝</td>
+								<td>男</td>
+								<td>28</td>
+								<td>2018-06-17 09:30</td>
+								<td></td>
+								<td>Li</td>
+								<td align="center"><img src="images/icons/social_google_box.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="04">
+									<label for="04"></label></td>
+								<td>2018-06-30</td>
+								<td>愛。飛翔－聯合感恩音樂會</td>
+								<td>杜又山</td>
+								<td>台灣</td>
+								<td>男</td>
+								<td>40</td>
+								<td>2018-06-18 13:50</td>
+								<td>2018-06-18 13:52</td>
+								<td>shanTu</td>
+								<td align="center"><img src="images/icons/social_google_box.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center"><input name="chooseData" type="checkbox"  class="check" id="05">
+									<label for="05"></label></td>
+								<td>2018-06-30</td>
+								<td>愛。飛翔－聯合感恩音樂會</td>
+								<td>堂本中一</td>
+								<td>日本</td>
+								<td>男</td>
+								<td>25</td>
+								<td>2018-06-18 21:00</td>
+								<td>2018-06-18 21:30</td>
+								<td>hank</td>
+								<td align="center"><img src="images/icons/social_google_box.png"></td>
+								<td align="center" nowrap="nowrap">
+									<a href="#"><img title="修改索票資料" src="images/icons/edit.png" width="24"></a>
+									<a href="#"><img title="取消索票資料" src="images/icons/action_delete.gif" width="24" onclick="return confirm('確認要刪除此筆索票資料？')"></a>
+								</td>
+							</tr>
+						</tbody>											
+					</table>
+	      		</div>
+	      		
+	      		
+	      	</div>
+      	</section>
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section>
+          <div class="container2">
+            <div class="copyright">
+            	<img src="images/icons/logo-footer.png" width="64" align="middle" style="margin-right: 30px;" /> 本網站僅供投標演示參考用，圖文資料來源為花蓮縣文化局。
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

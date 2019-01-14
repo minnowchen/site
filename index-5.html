@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>進階檢索 - 宜蘭縣史館出版品資料庫檢索管理系統</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/google-map.css">
+    <link rel="stylesheet" href="css/mailform.css">
+	<link rel="stylesheet" href="css/pure-min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery-migrate-1.3.0.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
+    <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	
+	<link rel="stylesheet" href="DataTables-1.10.11/media/css/jquery.dataTables.css">
+    <script src="DataTables-1.10.11/media/js/jquery.dataTables.min.js"></script>	
+	<script type="text/javascript">
+	$.extend(true, $.fn.dataTable.defaults, {
+		"language": {
+			"zeroRecords" : "無符合查詢之資料", /*關鍵字查詢為0筆資料*/
+			"info": "第 _PAGE_ 頁/ 共 _PAGES_ 頁，_TOTAL_筆資料",
+			"infoEmpty": "",
+			"lengthMenu": "每頁顯示 _MENU_ 筆資料",
+			"paginate" : {
+				"next" : "下一頁",
+				"previous" : "上一頁"
+			},
+			"search" : "搜尋關鍵字：",
+			"emptyTable" : "無符合查詢之資料"  /*沒有list*/
+		}
+	});
+	</script>
+	
+	<!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/device.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#xxtabs").tabs();
+			$('#xxtable').DataTable({
+				"pageLength" : 10,
+				"lengthMenu" : [[10, 25, 50, -1], [10, 25, 50, "全部"]],
+			});			
+		})
+	</script>
+  </head>
+  <body>
+    <div class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+      
+      
+      -->
+      <header>
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name" style="margin:0;"><a href="index.html" style="font-size:35pt;">宜蘭縣史館</a></h1>
+            <p class="brand_slogan">宜蘭縣史館出版品資料庫檢索管理系統</p>
+		  </div>
+		  <div style="float: right;margin-top:20px;"><img src="images/search.png" style="height: 40px;vertical-align: bottom;" />熱門搜尋：葛瑪蘭、龜山島</div>
+        </div>
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                <li><a href="#">宜蘭文獻雜誌</a>
+                  <ul>
+                    <li><a href="#">子選單1</a></li>
+                    <li><a href="#">子選單2</a></li>
+                  </ul>				
+                </li>
+                <li><a href="#">宜蘭文獻叢刊</a></li>
+                <li><a href="#">宜蘭縣史系列</a></li>
+                <li><a href="#">宜蘭人文系列</a></li>
+                <li class="active"><a href="index-4.html">進階檢索</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+        <section class="well1">
+          <div class="container">
+			<div id="xxtabs" class="grid_11">
+				<ul>
+					<li><a href="#tabs-1" style="font-size:18px;">縮圖模式</a></li>
+					<li><a href="#tabs-2" style="font-size:18px;">清單模式</a></li>			
+				</ul>
+				
+				<div id="tabs-1" >
+					<a href="index-6.html"><img src="images\searchbooks.png" /></a>
+				</div>
+				<div id="tabs-2">
+					<table class="pure-table pure-table-horizontal" id="xxtable" style="width:100%;">
+						<thead>
+							<tr>
+								<td>序號</td>
+								<td>期別</td>
+								<td>主題</td>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第1期</a></td></tr>
+								
+								<tr>
+									<td>2</td>
+									<td>2</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第2期</a></td></tr>	
+								<tr>
+									<td>3</td>
+									<td>3</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第3期</a></td></tr>	
+								<tr>
+									<td>4</td>
+									<td>4</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第4期</a></td></tr>										
+								<tr>
+									<td>5</td>
+									<td>5</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第5期</a></td></tr>	
+								<tr>
+									<td>6</td>
+									<td>6</td>
+									<td><a href="index-6.html">噶瑪蘭人專刊</a></td></tr>	
+								<tr>
+									<td>7</td>
+									<td>7</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第7期</a></td></tr>	
+								<tr>
+									<td>8</td>
+									<td>8</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第8期</a></td></tr>
+								<tr>
+									<td>9</td>
+									<td>9</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第9期</a></td></tr>
+								<tr>
+									<td>10</td>
+									<td>10</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第10期</a></td></tr>
+
+								<tr>
+									<td>11</td>
+									<td>11</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第1期</a></td></tr>
+								
+								<tr>
+									<td>12</td>
+									<td>12</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第2期</a></td></tr>	
+								<tr>
+									<td>13</td>
+									<td>13</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第3期</a></td></tr>	
+								<tr>
+									<td>14</td>
+									<td>14</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第4期</a></td></tr>										
+								<tr>
+									<td>15</td>
+									<td>15</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第5期</a></td></tr>	
+								<tr>
+									<td>16</td>
+									<td>16</td>
+									<td><a href="index-6.html">噶瑪蘭人專刊</a></td></tr>	
+								<tr>
+									<td>17</td>
+									<td>17</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第7期</a></td></tr>	
+								<tr>
+									<td>18</td>
+									<td>18</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第8期</a></td></tr>
+								<tr>
+									<td>19</td>
+									<td>19</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第9期</a></td></tr>
+								<tr>
+									<td>20</td>
+									<td>20</td>
+									<td><a href="index-6.html">宜蘭文獻雜誌第10期</a></td></tr>									
+						</tbody>
+					</table>					
+				</div>				
+			</div>
+			
+			<div>
+			
+          </div>
+        </section>
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section class="well3">
+          <div class="container">
+            <ul class="row contact-list">
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-map-marker"></div>
+                  </div>
+                  <div class="box_cnt__no-flow">
+                    <address>宜蘭市(26060)南津里縣政北路三號(臨接宜蘭縣政府)</address>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-envelope"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="mailto:#">yihistory@mail.e-land.gov.tw</a></div>
+                </div>
+              </li>
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-phone"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="callto:#">(03)925-5488</a></div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-fax"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="callto:#">(03)925-5493</a></div>
+                </div>
+              </li>
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-calendar"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="#">開館時間：週二至週日9:00-17:00</a></div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-calendar-o"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="#">休館日：每週一、民俗節日、國定假日、每月最後一天(本館清潔日)及經政府公告之放假日</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="copyright">Business Company © <span id="copyright-year"></span>.&nbsp;&nbsp;<a href="index-5.html">Privacy Policy</a>More Business Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/business-web-templates/" target="_blank">TemplateMonster.com</a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <!-- coded by Kirk -->
+  </body>
+</html>
